@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Manrope", sans-serif;
+  height: 100vh;
+  background-color: #ecf2f8; }
+
+.hidden {
+  opacity: 0; }
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.container {
+  max-width: 37.5rem;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  max-height: 100%; }
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      max-width: 90vw;
+      overflow: visible;
+      position: relative; } }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 70vw; } }
+  @media (min-width: 900px) {
+    .container {
+      max-width: 80vw; } }
+
+.left-container {
+  width: 100%;
+  height: 27.7rem; }
+  .left-container .left-container-img {
+    width: 100%;
+    height: 100%; }
+    .left-container .left-container-img img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%; }
+
+.right-container {
+  padding: 3rem 2rem;
+  background-color: white;
+  padding-bottom: 0; }
+  .right-container-heading {
+    font-weight: 700;
+    color: #48556a;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 1rem; }
+  .right-container-sub-heading {
+    color: #6d7f97;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 2rem; }
+  .right-container-author-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 2rem 0; }
+    @media (min-width: 767px) {
+      .right-container-author-info {
+        position: inherit; } }
+    .right-container-author-info-img img {
+      max-width: 30%;
+      max-width: 30%;
+      border-radius: 50%; }
+    .right-container-author-info h4 {
+      font-size: 1.5rem;
+      margin-left: -10rem;
+      margin-right: auto;
+      color: #6d7f97; }
+      .right-container-author-info h4 span {
+        color: #9eafc2;
+        font-weight: 500; }
+    .right-container-author-info button {
+      background-color: #ecf2f8;
+      padding: 1rem;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%; }
+  .right-container .right-container-share {
+    position: absolute;
+    height: calc(100%);
+    width: calc(100% + 4rem);
+    top: 0;
+    left: -2rem;
+    background-color: #48556a;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+    z-index: 1; }
+    @media (min-width: 767px) {
+      .right-container .right-container-share {
+        width: max-content;
+        height: 5rem;
+        border-radius: 1rem;
+        left: 77%;
+        top: 50%;
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5); }
+        .right-container .right-container-share::before {
+          content: "";
+          top: 1rem;
+          left: 0rem;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          clip-path: polygon(0% 0%, 100% 0%, 99% 0, 70% 1%, 50% 100%, 30% 0, 0 0);
+          background-color: #48556a;
+          z-index: -1; } }
+  @media (min-width: 767px) and (min-width: 1023px) {
+    .right-container .right-container-share {
+      left: 80%; } }
+  @media (min-width: 767px) and (min-width: 1200px) {
+    .right-container .right-container-share {
+      left: 83%; } }
+  @media (min-width: 767px) and (min-width: 1300px) {
+    .right-container .right-container-share {
+      left: 84%; } }
+  @media (min-width: 767px) and (min-width: 1400px) {
+    .right-container .right-container-share {
+      left: 85%; } }
+    .right-container .right-container-share-btn {
+      display: flex;
+      gap: 2rem;
+      align-items: center; }
+      .right-container .right-container-share-btn span {
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        font-size: 1.5rem;
+        color: #9eafc2; }
+      .right-container .right-container-share-btn img {
+        width: 2.5rem; }
+    .right-container .right-container-share button {
+      background-color: #9eafc2; }
+      @media (min-width: 768px) {
+        .right-container .right-container-share button {
+          display: none; } }
